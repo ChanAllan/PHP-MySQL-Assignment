@@ -1,0 +1,3 @@
+Start: Wed, 6 May 2015 17:00:00 -0700
+End: Thu, 7 May 2015  00:57:47 -0700
+Tasks: Cloned the repository and created the index.php, video_store.sql, delete.php files. Worked on index.php and currently has a functioning form that adds videos to the table and the categories drop box updates with each movie/category input. The delete.php deletes the entire table values and redirects to the index.php form page. The video_store.sql contains the CREATE TABLE query for the database. During this time, I also reviewed class lectures and reviewed outside resources. 
