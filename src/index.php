@@ -50,6 +50,9 @@ if ($mysqli->connect_errno) {
 		}
 		/*Assigns the name, category and length to variables if all criteria
 		were met in the form entry*/
+		/////////////////////////////////////////////////////////////////////////////////////
+		/**NEED TO CHANGE THE CONDITIONAL STATEMENTS BASED ON STATEMENTS ABOVE */
+		/////////////////////////////////////////////////////////////////////////////////////
 		if ((!empty($_POST['video_name']) && !empty($_POST['video_cat']) && 
 			!(empty($_POST['video_len']) || $_POST['video_len'] < 0))) {
 			$vid_name = $_POST['video_name'];
