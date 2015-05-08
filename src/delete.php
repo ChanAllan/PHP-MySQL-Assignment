@@ -23,18 +23,18 @@ http://php.net/manual/en/mysqli.quickstart.prepared-statements.php*/
 to set up DELETE statements*/
 $mysqli = new mysqli("oniddb.cws.oregonstate.edu", "chanal-db", $myPassword, "chanal-db");
 if ($mysqli->connect_errno) {
-	echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+	echo "Failed to connect to MySQL";
 } else {
 	if (!($stmt = $mysqli->prepare('DELETE FROM video_store'))) {
-		echo 'Prepared failed<br><br>';
+		echo 'Prepared failed<br>';
 	}
 	if(!($stmt->execute())) {
-		echo 'Execute failed<br><br>';
+		echo 'Execute failed<br>';
 	}
 }
 
 $stmt->close();
-///////////*WILL REMOVE MYSQL ERROR  OUTPUTS BEFORE SUBMISSION*/////////////////////////////////////
+
 
 
 
