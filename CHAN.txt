@@ -5,3 +5,7 @@ Tasks: Cloned the repository and created the index.php, video_store.sql, delete.
 Start: Thu, 7 May 2015 16:30 -0700
 End: Thu, 7 May 2015 23:28:09 -0700
 Tasks: Continued working on index.php and included a style.css, update_status.php, and deleterow.php files to meet the requirements for table functions. The program works and meets most of the requirements. I still need to clean up the codes and remove some comments and php/mysqli error codes for requirement purposes. This will be accomplished in the next work session. I also reviewed some outside resources to code the new elements of the table functions.
+
+Start: Fri, 8 May 2015 00:30:00 -0700
+End: Fri, 8 May 2015 01:00:33 -0700
+Tasks: Cleaned up the codes in all pages which included removing unnecessary comments and error code implements. Also went through the rough testing protocol to see if everything was working.
