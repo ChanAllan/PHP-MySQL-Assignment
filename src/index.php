@@ -7,11 +7,11 @@ include 'storedInfo.php';
 http://php.net/manual/en/mysqli.quickstart.prepared-statements.php*/
 $mysqli = new mysqli("oniddb.cws.oregonstate.edu", "chanal-db", $myPassword, "chanal-db");
 if ($mysqli->connect_errno) {
-	echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+	echo "Failed to connect to MySQL";
 } else {
 	echo "MySQL connection established!<br>";
 }
-///////////*WILL REMOVE MYSQL ERROR  OUTPUTS BEFORE SUBMISSION*/////////////////////////////////////
+
 
 ?>
 
@@ -64,8 +64,7 @@ if ($mysqli->connect_errno) {
 			    echo 'Binding parameters failed<br><br>';
 			}
 			if (!($stmt->execute())) {
-//////////////echo 'Execute failed<br><br>'; IT WORKS, WILL DISPLAY MESSAGE IF A DUPLICATE VIDEO NAME IS ENTERED WHICH THE ERROR MESSAGE SHOWS
-    			echo "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
+    			echo "Execute failed<br><br>";
 			}
 		}
 	}
@@ -78,8 +77,8 @@ if ($mysqli->connect_errno) {
 	}
 
 	if (!($stmt->execute())) {
-//////////////echo 'Execute failed<br><br>'; IT WORKS, WILL DISPLAY MESSAGE IF A DUPLICATE VIDEO NAME IS ENTERED WHICH THE ERROR MESSAGE SHOWS
-    	echo "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
+
+    	echo "Execute failed";
 	}
 
 	if (!$stmt->bind_result($out_category)) {
@@ -109,12 +108,12 @@ if ($mysqli->connect_errno) {
 		$filter_choice = "\"".$filter_choice."\"";
 		$WHERE = ' WHERE category ='.$filter_choice;
 	}
-	/*WILL REMOVE ERROR MESSAGES FOR FINAL SUBMISSION*////////////////////////////////////////////
+
 	if (!$stmt = $mysqli->prepare("SELECT id, name, category, length, rented FROM video_store".$WHERE)) {
-		echo "Prepared failed (" . $stmt->errno . ") " . $stmt->error;
+		echo "Prepared failed";
 	}
 	if (!$stmt->execute()) {
-		echo "Execute failed (" . $stmt->errno . ") " . $stmt->error;
+		echo "Execute failed";
 	}
 
 	$out_id = NULL;
