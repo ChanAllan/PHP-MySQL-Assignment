@@ -1,0 +1,12 @@
+table tr td{
+	border: 1px solid black;
+	text-align:center;
+}
+
+fieldset {
+	text-align:center;
+}
+
+form {
+	text-align: center;
+}
