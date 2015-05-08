@@ -21,7 +21,7 @@ $check_status = NULL;
 
 $mysqli = new mysqli("oniddb.cws.oregonstate.edu", "chanal-db", $myPassword, "chanal-db");
 if ($mysqli->connect_errno) {
-	echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+	echo "Failed to connect to MySQL<br>";
 } else {
 	if(!$stmt = $mysqli->prepare("SELECT rented FROM video_store WHERE id =".$row_id)) {
 		echo 'Prepare failed<br>';
@@ -60,7 +60,7 @@ if ($mysqli->connect_errno) {
 	}
 
 }
-///////////*WILL REMOVE MYSQL ERROR  OUTPUTS BEFORE SUBMISSION*/////////////////////////////////////
+
 
 
 ?>
